@@ -1,0 +1,133 @@
+body {
+    background-image: url(image/gg.jpg);
+    font-family: 'Segoe UI', sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+.title{
+    position: relative;
+    width: 100%;
+}
+.my_title{
+    display: block;
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+}
+.title h3{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);  
+}
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}
+.login-card {
+    width: 100%;
+    background: rgba(13, 17, 26, 0.85);
+    max-width: 400px;
+    border: none;
+    backdrop-filter: blur(12px);
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    padding: 2rem;
+}
+.login-title{
+    color: #e5e7eb;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+.form-control{
+    background-color: #1f2933;
+    border: 1px solid #374151;
+    color: #e5e7eb;
+    border-radius: 10px;
+}
+.form-control::placeholder{
+    color: #9ca3af;
+}
+.form-control:focus{
+    border-color: #3b82f6;
+    color: black;
+    box-shadow: none;
+}
+.btn-primary {
+    background-color: #3b82f6;
+    border: none;
+    padding: 10px;
+}
+.btn-primary:hover { background-color: #2563eb; }
+.logo-container { text-align: center; margin-bottom: 2rem; }
+.logo-container img { height: 60px; object-fit: contain; }
+.bubbles{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    bottom: -60px;
+    position: absolute;
+}
+.bubbles img{
+    width: 50px;
+    animation: bubble 7s linear infinite;
+}
+@keyframes bubble{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-140vh);
+        opacity: 0;
+    }
+}
+.bubbles img:nth-child(1){
+    animation-delay: 1.5s;
+    width: 25px;
+}
+.bubbles img:nth-child(2){
+    animation-delay: 0.5s;
+}
+.bubbles img:nth-child(3){
+    animation-delay: 0.1s;
+    width: 25px;
+}
+.bubbles img:nth-child(4){
+    animation-delay: 4s;
+}
+.bubbles img:nth-child(5){
+    animation-delay: 2.5s;
+}
+.bubbles img:nth-child(6){
+    animation-delay: 5s;
+    width: 20px;
+}
+.bubbles img:nth-child(7){
+    animation-delay: 6s;
+    width: 35px;
+}
+.footer hr{
+    width: 50px;
+    border-top: 2px solid #ccc;
+    margin: 1rem auto;
+}
+footer .icon{
+    font-size: 20px;
+    gap: 30px;
+}
+
